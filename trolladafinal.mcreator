@@ -155,56 +155,6 @@
       "path": "~/Zoio"
     },
     {
-      "name": "ZoioFinal",
-      "type": "animatedentity",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zoio_final",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/trolladafinal/entity/ZoioFinalEntity.java",
-          "src/main/java/net/mcreator/trolladafinal/entity/model/ZoioFinalModel.java",
-          "src/main/java/net/mcreator/trolladafinal/entity/layer/ZoioFinalLayer.java",
-          "src/main/java/net/mcreator/trolladafinal/client/renderer/ZoioFinalRenderer.java",
-          "src/main/resources/assets/trolladafinal/models/item/zoio_final_spawn_egg.json"
-        ]
-      },
-      "path": "~/Zoio"
-    },
-    {
-      "name": "ZoioFinalEntityIsHurt",
-      "type": "procedure",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zoio_final_entity_is_hurt",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/trolladafinal/procedures/ZoioFinalEntityIsHurtProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Zoio"
-    },
-    {
       "name": "Fidgetspinner",
       "type": "animatedblock",
       "sortid": 14,
@@ -297,23 +247,6 @@
         "dependencies": []
       },
       "path": "~/Zoio"
-    },
-    {
-      "name": "Alek",
-      "type": "livingentity",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alek",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/trolladafinal/client/renderer/AlekRenderer.java",
-          "src/main/resources/data/trolladafinal/forge/biome_modifier/alek_biome_modifier.json",
-          "src/main/java/net/mcreator/trolladafinal/entity/AlekEntity.java",
-          "src/main/resources/assets/trolladafinal/models/item/alek_spawn_egg.json"
-        ]
-      },
-      "path": "~/Alek"
     },
     {
       "name": "AlekOnEntityTickUpdate",
@@ -425,6 +358,20 @@
         ]
       },
       "path": "~/Alek"
+    },
+    {
+      "name": "MarretaAdvance",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marreta_advance",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trolladafinal/advancements/marreta_advance.json"
+        ]
+      },
+      "path": "~/Other"
     }
   ],
   "variable_elements": [
@@ -467,6 +414,14 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "alekingles",
+      "files": [
+        "ingles-fluente"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -479,26 +434,25 @@
   "language_map": {
     "en_us": {
       "subtitles.voupegar": "",
+      "subtitles.alekingles": "",
       "item.trolladafinal.alek_animated_spawn_egg": "Alek Spawn Egg",
-      "entity.trollada_final.zoio": "Zoio",
+      "advancements.marreta_advance.title": "EU VOU PEGAR MINHA MARRETA!",
       "subtitles.suacara": "",
+      "entity.trollada_final.zoio": "Zoio",
       "item.trolladafinal.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
+      "advancements.marreta_advance.descr": "Consiga a marreta",
       "item_group.trollada_final.eyes_tab": "The Eyes",
       "item.trollada_final.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
       "entity.trolladafinal.zoio_stalker": "Zoio Stalker",
       "item_group.trolladafinal.eyes_tab": "The Eyes",
-      "item.trolladafinal.alek_spawn_egg": "Alek Spawn Egg",
-      "entity.trolladafinal.alek": "Alek",
       "item.trolladafinal.polaroid_1": "Polaroid 1",
       "item.trollada_final.zoio_spawn_egg": "Zoio Spawn Egg",
       "biome.trolladafinal.fumaca_bioma": "Fumaça",
       "subtitles.risada": "",
       "jei.trolladafinal.spinner_desc": "Lost relic from half a decade ago, something extremely hated by Zoio.",
       "item.trolladafinal.zoio_stalker_spawn_egg": "Zoio Stalker Spawn Egg",
-      "item.trolladafinal.zoio_final_spawn_egg": "Trollada Final Spawn Egg",
       "item.trollada_final.polaroid_1": "Polaroid 1",
       "entity.trolladafinal.alek_animated": "Alek",
-      "entity.trolladafinal.zoio_final": "Trollada Final",
       "item.trollada_final.marreta": "Marreta",
       "entity.trollada_final.zoio_boss": "Zoio Boss",
       "item.trolladafinal.marreta": "Sledgehammer",
@@ -510,26 +464,25 @@
     },
     "pt_br": {
       "subtitles.voupegar": "Vou pegar minha marreta!",
+      "subtitles.alekingles": "",
       "item.trolladafinal.alek_animated_spawn_egg": "Alek Spawn Egg",
-      "entity.trollada_final.zoio": "Zoio",
+      "advancements.marreta_advance.title": "EU VOU PEGAR MINHA MARRETA!",
       "subtitles.suacara": "Vou dar tanta marretada na sua cara",
+      "entity.trollada_final.zoio": "Zoio",
       "item.trolladafinal.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
+      "advancements.marreta_advance.descr": "Consiga a marreta",
       "item_group.trollada_final.eyes_tab": "The Eyes",
       "item.trollada_final.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
       "entity.trolladafinal.zoio_stalker": "Zoio Stalker",
       "item_group.trolladafinal.eyes_tab": "The Eyes",
-      "item.trolladafinal.alek_spawn_egg": "Alek Spawn Egg",
-      "entity.trolladafinal.alek": "Alek",
       "item.trolladafinal.polaroid_1": "Polaroid 1",
       "item.trollada_final.zoio_spawn_egg": "Zoio Spawn Egg",
       "biome.trolladafinal.fumaca_bioma": "Fumaça",
       "subtitles.risada": "Risada",
       "jei.trolladafinal.spinner_desc": "Reliquia perdida de meia década atrás, algo extremamente odiado por Zoio",
       "item.trolladafinal.zoio_stalker_spawn_egg": "Zoio Stalker Spawn Egg",
-      "item.trolladafinal.zoio_final_spawn_egg": "Zoio Final Spawn Egg",
       "item.trollada_final.polaroid_1": "Polaroid 1",
       "entity.trolladafinal.alek_animated": "Alek",
-      "entity.trolladafinal.zoio_final": "Zoio Final",
       "item.trollada_final.marreta": "Marreta",
       "entity.trollada_final.zoio_boss": "Zoio Boss",
       "item.trolladafinal.marreta": "Marreta",
@@ -550,12 +503,20 @@
       {
         "name": "Alek",
         "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Other",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "trolladafinal",
-    "modName": "The Eyes",
+    "modName": "The Eyes Trollada Final",
     "version": "0.1",
     "author": "DuranMDuarte",
     "websiteURL": "https://mcreator.net",

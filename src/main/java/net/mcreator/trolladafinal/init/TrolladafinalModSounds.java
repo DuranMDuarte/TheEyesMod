@@ -19,4 +19,5 @@ public class TrolladafinalModSounds {
 	public static final RegistryObject<SoundEvent> RISADA = REGISTRY.register("risada", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("trolladafinal", "risada")));
 	public static final RegistryObject<SoundEvent> SUACARA = REGISTRY.register("suacara", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("trolladafinal", "suacara")));
 	public static final RegistryObject<SoundEvent> NAOVOUAGUENTAR = REGISTRY.register("naovouaguentar", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("trolladafinal", "naovouaguentar")));
+	public static final RegistryObject<SoundEvent> ALEKINGLES = REGISTRY.register("alekingles", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("trolladafinal", "alekingles")));
 }

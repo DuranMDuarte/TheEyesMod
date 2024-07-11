@@ -10,8 +10,8 @@
       "value": ""
     },
     "igniteFire": false,
-    "power": 1.0,
-    "damage": 2.0,
+    "power": 0.8,
+    "damage": 5.0,
     "knockback": 1,
     "entityModel": "Default",
     "customModelTexture": "",

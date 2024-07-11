@@ -12,9 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.trolladafinal.client.renderer.ZoioStalkerRenderer;
-import net.mcreator.trolladafinal.client.renderer.ZoioFinalRenderer;
 import net.mcreator.trolladafinal.client.renderer.ZoioBossRenderer;
-import net.mcreator.trolladafinal.client.renderer.AlekRenderer;
 import net.mcreator.trolladafinal.client.renderer.AlekAnimatedRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -23,8 +21,6 @@ public class TrolladafinalModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(TrolladafinalModEntities.ZOIO_BOSS.get(), ZoioBossRenderer::new);
 		event.registerEntityRenderer(TrolladafinalModEntities.ZOIO_STALKER.get(), ZoioStalkerRenderer::new);
-		event.registerEntityRenderer(TrolladafinalModEntities.ZOIO_FINAL.get(), ZoioFinalRenderer::new);
-		event.registerEntityRenderer(TrolladafinalModEntities.ALEK.get(), AlekRenderer::new);
 		event.registerEntityRenderer(TrolladafinalModEntities.FUMACAPROJETIL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TrolladafinalModEntities.ALEK_ANIMATED.get(), AlekAnimatedRenderer::new);
 	}

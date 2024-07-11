@@ -30,5 +30,13 @@
         "stream": false
       }
     ]
+  },
+  "alekingles": {
+    "sounds": [
+      {
+        "name": "trolladafinal:ingles-fluente",
+        "stream": false
+      }
+    ]
   }
 }

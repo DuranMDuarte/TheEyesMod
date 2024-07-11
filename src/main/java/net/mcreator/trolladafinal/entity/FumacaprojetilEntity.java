@@ -79,7 +79,7 @@ public class FumacaprojetilEntity extends AbstractArrow implements ItemSupplier 
 	}
 
 	public static FumacaprojetilEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1f, 2, 1);
+		return shoot(world, entity, source, 0.8f, 5, 1);
 	}
 
 	public static FumacaprojetilEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -98,9 +98,9 @@ public class FumacaprojetilEntity extends AbstractArrow implements ItemSupplier 
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.8f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(2);
+		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(1);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
