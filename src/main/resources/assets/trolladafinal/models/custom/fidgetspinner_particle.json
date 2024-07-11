@@ -1,0 +1,7 @@
+
+{
+  "parent": "trolladafinal:displaysettings/spinneranimated",
+  "textures": {
+    "particle": "trolladafinal:block/spinneranimated"
+  }
+}

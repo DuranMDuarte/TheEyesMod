@@ -1,0 +1,7 @@
+{
+  "parent": "trolladafinal:custom/marreta",
+  "textures": {
+    "2": "trolladafinal:block/texture",
+    "particle": "trolladafinal:item/texture"
+  }
+}

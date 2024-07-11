@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "trolladafinal:block/fumaca_portal_ew"
+    },
+    "axis=x": {
+      "model": "trolladafinal:block/fumaca_portal_ns"
+    }
+  }
+}

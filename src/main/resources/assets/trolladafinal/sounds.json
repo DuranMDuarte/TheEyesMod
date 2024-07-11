@@ -1,0 +1,34 @@
+{
+  "voupegar": {
+    "sounds": [
+      {
+        "name": "trolladafinal:marreta",
+        "stream": false
+      }
+    ]
+  },
+  "risada": {
+    "sounds": [
+      {
+        "name": "trolladafinal:zoiorisada",
+        "stream": false
+      }
+    ]
+  },
+  "suacara": {
+    "sounds": [
+      {
+        "name": "trolladafinal:marretadanasuacara",
+        "stream": false
+      }
+    ]
+  },
+  "naovouaguentar": {
+    "sounds": [
+      {
+        "name": "trolladafinal:naovouaguentar_mais",
+        "stream": false
+      }
+    ]
+  }
+}

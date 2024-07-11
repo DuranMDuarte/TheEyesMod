@@ -1,0 +1,8 @@
+{
+  "parent": "trolladafinal:custom/polaroid_zoio",
+  "textures": {
+    "1": "trolladafinal:block/ele_esta_aqui",
+    "2": "trolladafinal:block/polaroid",
+    "particle": "trolladafinal:item/ele_esta_aqui"
+  }
+}

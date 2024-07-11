@@ -1,0 +1,577 @@
+{
+  "mod_elements": [
+    {
+      "name": "Marreta",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marreta",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trolladafinal/models/item/marreta.json",
+          "src/main/java/net/mcreator/trolladafinal/item/MarretaItem.java"
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "Spinnerinteract",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spinnerinteract",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/SpinnerinteractProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "ZoioBoss",
+      "type": "livingentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoio_boss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/entity/ZoioBossEntity.java",
+          "src/main/java/net/mcreator/trolladafinal/client/renderer/ZoioBossRenderer.java",
+          "src/main/resources/assets/trolladafinal/models/item/zoio_boss_spawn_egg.json"
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "Polaroid1",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polaroid_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/item/Polaroid1Item.java",
+          "src/main/resources/assets/trolladafinal/models/item/polaroid_1.json"
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "EyesTab",
+      "type": "tab",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eyes_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SpinnerDesc",
+      "type": "jeiinformation",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spinner_desc",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "ZoioStalker",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "zoio_stalker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/entity/ZoioStalkerEntity.java",
+          "src/main/resources/assets/trolladafinal/models/item/zoio_stalker_spawn_egg.json",
+          "src/main/java/net/mcreator/trolladafinal/client/renderer/ZoioStalkerRenderer.java",
+          "src/main/resources/data/trolladafinal/forge/biome_modifier/zoio_stalker_biome_modifier.json"
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "ZoioStalkerOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoio_stalker_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/ZoioStalkerOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "ZoioFinal",
+      "type": "animatedentity",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoio_final",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/entity/ZoioFinalEntity.java",
+          "src/main/java/net/mcreator/trolladafinal/entity/model/ZoioFinalModel.java",
+          "src/main/java/net/mcreator/trolladafinal/entity/layer/ZoioFinalLayer.java",
+          "src/main/java/net/mcreator/trolladafinal/client/renderer/ZoioFinalRenderer.java",
+          "src/main/resources/assets/trolladafinal/models/item/zoio_final_spawn_egg.json"
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "ZoioFinalEntityIsHurt",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoio_final_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/ZoioFinalEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "Fidgetspinner",
+      "type": "animatedblock",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fidgetspinner",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/block/model/FidgetspinnerBlockModel.java",
+          "src/main/java/net/mcreator/trolladafinal/block/model/FidgetspinnerDisplayModel.java",
+          "src/main/java/net/mcreator/trolladafinal/block/display/FidgetspinnerDisplayItem.java",
+          "src/main/resources/assets/trolladafinal/models/custom/fidgetspinner_particle.json",
+          "src/main/resources/assets/trolladafinal/models/item/fidgetspinner.json",
+          "src/main/resources/assets/trolladafinal/blockstates/fidgetspinner.json",
+          "src/main/java/net/mcreator/trolladafinal/block/renderer/FidgetspinnerTileRenderer.java",
+          "src/main/java/net/mcreator/trolladafinal/block/FidgetspinnerBlock.java",
+          "src/main/java/net/mcreator/trolladafinal/block/renderer/FidgetspinnerDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/trolladafinal/block/entity/FidgetspinnerTileEntity.java"
+        ]
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "CasteloAlek",
+      "type": "structure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castelo_alek",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trolladafinal/worldgen/template_pool/castelo_alek.json",
+          "src/main/resources/data/trolladafinal/worldgen/structure/castelo_alek.json",
+          "src/main/resources/data/trolladafinal/worldgen/structure_set/castelo_alek.json"
+        ]
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "FumacaBioma",
+      "type": "biome",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumaca_bioma",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trolladafinal/worldgen/biome/fumaca_bioma.json",
+          "src/main/resources/data/trolladafinal/worldgen/placed_feature/fumaca_bioma_tree.json",
+          "src/main/resources/data/trolladafinal/worldgen/configured_feature/fumaca_bioma_tree.json"
+        ]
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "Fumaca",
+      "type": "dimension",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumaca",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trolladafinal/models/block/fumaca_portal_ns.json",
+          "src/main/java/net/mcreator/trolladafinal/world/dimension/FumacaDimension.java",
+          "src/main/resources/assets/trolladafinal/blockstates/fumaca_portal.json",
+          "src/main/java/net/mcreator/trolladafinal/world/teleporter/FumacaPortalShape.java",
+          "src/main/java/net/mcreator/trolladafinal/item/FumacaItem.java",
+          "src/main/java/net/mcreator/trolladafinal/block/FumacaPortalBlock.java",
+          "src/main/resources/assets/trolladafinal/models/block/fumaca_portal_ew.json",
+          "src/main/resources/assets/trolladafinal/models/item/fumaca.json",
+          "src/main/resources/data/trolladafinal/dimension/fumaca.json",
+          "src/main/java/net/mcreator/trolladafinal/world/teleporter/FumacaTeleporter.java",
+          "src/main/resources/data/trolladafinal/dimension_type/fumaca.json"
+        ]
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "ZoioBossOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zoio_boss_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/ZoioBossOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Zoio"
+    },
+    {
+      "name": "Alek",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alek",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/client/renderer/AlekRenderer.java",
+          "src/main/resources/data/trolladafinal/forge/biome_modifier/alek_biome_modifier.json",
+          "src/main/java/net/mcreator/trolladafinal/entity/AlekEntity.java",
+          "src/main/resources/assets/trolladafinal/models/item/alek_spawn_egg.json"
+        ]
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "AlekOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alek_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/AlekOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "Fumacaprojetil",
+      "type": "projectile",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumacaprojetil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/entity/FumacaprojetilEntity.java"
+        ]
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "FumacaprojetilWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumacaprojetil_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/FumacaprojetilWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "FumacaprojetilProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fumacaprojetil_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/FumacaprojetilProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Alek"
+    },
+    {
+      "name": "AlekAnimated",
+      "type": "animatedentity",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alek_animated",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trolladafinal/models/item/alek_animated_spawn_egg.json",
+          "src/main/java/net/mcreator/trolladafinal/entity/model/AlekAnimatedModel.java",
+          "src/main/resources/data/trolladafinal/forge/biome_modifier/alek_animated_biome_modifier.json",
+          "src/main/java/net/mcreator/trolladafinal/client/renderer/AlekAnimatedRenderer.java",
+          "src/main/java/net/mcreator/trolladafinal/entity/AlekAnimatedEntity.java"
+        ]
+      },
+      "path": "~/Alek"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "JUMPSCARE",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "voupegar",
+      "files": [
+        "marreta"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "risada",
+      "files": [
+        "zoiorisada"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "suacara",
+      "files": [
+        "marretadanasuacara"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "naovouaguentar",
+      "files": [
+        "naovouaguentar_mais"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DIRT#0",
+      "~Blocks.STONE#0",
+      "~Blocks.GRASS"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "subtitles.voupegar": "",
+      "item.trolladafinal.alek_animated_spawn_egg": "Alek Spawn Egg",
+      "entity.trollada_final.zoio": "Zoio",
+      "subtitles.suacara": "",
+      "item.trolladafinal.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
+      "item_group.trollada_final.eyes_tab": "The Eyes",
+      "item.trollada_final.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
+      "entity.trolladafinal.zoio_stalker": "Zoio Stalker",
+      "item_group.trolladafinal.eyes_tab": "The Eyes",
+      "item.trolladafinal.alek_spawn_egg": "Alek Spawn Egg",
+      "entity.trolladafinal.alek": "Alek",
+      "item.trolladafinal.polaroid_1": "Polaroid 1",
+      "item.trollada_final.zoio_spawn_egg": "Zoio Spawn Egg",
+      "biome.trolladafinal.fumaca_bioma": "Fumaça",
+      "subtitles.risada": "",
+      "jei.trolladafinal.spinner_desc": "Lost relic from half a decade ago, something extremely hated by Zoio.",
+      "item.trolladafinal.zoio_stalker_spawn_egg": "Zoio Stalker Spawn Egg",
+      "item.trolladafinal.zoio_final_spawn_egg": "Trollada Final Spawn Egg",
+      "item.trollada_final.polaroid_1": "Polaroid 1",
+      "entity.trolladafinal.alek_animated": "Alek",
+      "entity.trolladafinal.zoio_final": "Trollada Final",
+      "item.trollada_final.marreta": "Marreta",
+      "entity.trollada_final.zoio_boss": "Zoio Boss",
+      "item.trolladafinal.marreta": "Sledgehammer",
+      "entity.trolladafinal.zoio_boss": "Zoio Boss",
+      "subtitles.naovouaguentar": "",
+      "block.trolladafinal.fidgetspinner": "Fidgetspinner",
+      "item.trolladafinal.fumaca": "Fumaca Portal Igniter",
+      "block.trollada_final.spinner": "Spinner"
+    },
+    "pt_br": {
+      "subtitles.voupegar": "Vou pegar minha marreta!",
+      "item.trolladafinal.alek_animated_spawn_egg": "Alek Spawn Egg",
+      "entity.trollada_final.zoio": "Zoio",
+      "subtitles.suacara": "Vou dar tanta marretada na sua cara",
+      "item.trolladafinal.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
+      "item_group.trollada_final.eyes_tab": "The Eyes",
+      "item.trollada_final.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
+      "entity.trolladafinal.zoio_stalker": "Zoio Stalker",
+      "item_group.trolladafinal.eyes_tab": "The Eyes",
+      "item.trolladafinal.alek_spawn_egg": "Alek Spawn Egg",
+      "entity.trolladafinal.alek": "Alek",
+      "item.trolladafinal.polaroid_1": "Polaroid 1",
+      "item.trollada_final.zoio_spawn_egg": "Zoio Spawn Egg",
+      "biome.trolladafinal.fumaca_bioma": "Fumaça",
+      "subtitles.risada": "Risada",
+      "jei.trolladafinal.spinner_desc": "Reliquia perdida de meia década atrás, algo extremamente odiado por Zoio",
+      "item.trolladafinal.zoio_stalker_spawn_egg": "Zoio Stalker Spawn Egg",
+      "item.trolladafinal.zoio_final_spawn_egg": "Zoio Final Spawn Egg",
+      "item.trollada_final.polaroid_1": "Polaroid 1",
+      "entity.trolladafinal.alek_animated": "Alek",
+      "entity.trolladafinal.zoio_final": "Zoio Final",
+      "item.trollada_final.marreta": "Marreta",
+      "entity.trollada_final.zoio_boss": "Zoio Boss",
+      "item.trolladafinal.marreta": "Marreta",
+      "entity.trolladafinal.zoio_boss": "Zoio Boss",
+      "subtitles.naovouaguentar": "",
+      "block.trolladafinal.fidgetspinner": "Fidgetspinner",
+      "item.trolladafinal.fumaca": "Fumaca Portal Igniter",
+      "block.trollada_final.spinner": "Spinner"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Zoio",
+        "children": []
+      },
+      {
+        "name": "Alek",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "trolladafinal",
+    "modName": "The Eyes",
+    "version": "0.1",
+    "author": "DuranMDuarte",
+    "websiteURL": "https://mcreator.net",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "theeyeslogo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "jei"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.trolladafinal"
+  },
+  "mcreatorVersion": 202400118518
+}

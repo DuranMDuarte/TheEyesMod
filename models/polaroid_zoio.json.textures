@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "ele_esta_aqui",
+        "2": "polaroid"
+      },
+      "name": "default"
+    }
+  }
+}

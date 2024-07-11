@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "trolladafinal:castelo_alek",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 10,
+    "salt": 2123151232
+  }
+}
