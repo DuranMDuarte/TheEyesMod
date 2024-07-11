@@ -16,8 +16,8 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.trolladafinal.entity.ZoiobossEntity;
 import net.mcreator.trolladafinal.entity.ZoioStalkerEntity;
-import net.mcreator.trolladafinal.entity.ZoioBossEntity;
 import net.mcreator.trolladafinal.entity.FumacaprojetilEntity;
 import net.mcreator.trolladafinal.entity.AlekAnimatedEntity;
 import net.mcreator.trolladafinal.TrolladafinalMod;
@@ -25,14 +25,16 @@ import net.mcreator.trolladafinal.TrolladafinalMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TrolladafinalModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, TrolladafinalMod.MODID);
-	public static final RegistryObject<EntityType<ZoioBossEntity>> ZOIO_BOSS = register("zoio_boss",
-			EntityType.Builder.<ZoioBossEntity>of(ZoioBossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZoioBossEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ZoioStalkerEntity>> ZOIO_STALKER = register("zoio_stalker", EntityType.Builder.<ZoioStalkerEntity>of(ZoioStalkerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZoioStalkerEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<FumacaprojetilEntity>> FUMACAPROJETIL = register("fumacaprojetil",
 			EntityType.Builder.<FumacaprojetilEntity>of(FumacaprojetilEntity::new, MobCategory.MISC).setCustomClientFactory(FumacaprojetilEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<AlekAnimatedEntity>> ALEK_ANIMATED = register("alek_animated",
 			EntityType.Builder.<AlekAnimatedEntity>of(AlekAnimatedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AlekAnimatedEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ZoiobossEntity>> ZOIOBOSS = register("zoioboss",
+			EntityType.Builder.<ZoiobossEntity>of(ZoiobossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ZoiobossEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -43,16 +45,16 @@ public class TrolladafinalModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			ZoioBossEntity.init();
 			ZoioStalkerEntity.init();
 			AlekAnimatedEntity.init();
+			ZoiobossEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(ZOIO_BOSS.get(), ZoioBossEntity.createAttributes().build());
 		event.put(ZOIO_STALKER.get(), ZoioStalkerEntity.createAttributes().build());
 		event.put(ALEK_ANIMATED.get(), AlekAnimatedEntity.createAttributes().build());
+		event.put(ZOIOBOSS.get(), ZoiobossEntity.createAttributes().build());
 	}
 }

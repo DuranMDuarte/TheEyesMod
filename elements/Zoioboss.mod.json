@@ -1,44 +1,30 @@
 {
   "_fv": 60,
-  "_type": "livingentity",
+  "_type": "animatedentity",
   "definition": {
-    "mobName": "Zoio Boss",
+    "mobName": "Zoio",
     "mobLabel": "",
-    "mobModelName": "Biped",
-    "mobModelTexture": "zoio_skin.png",
-    "transparentModelCondition": {
-      "fixedValue": false
-    },
-    "isShakingCondition": {
-      "fixedValue": false
-    },
-    "solidBoundingBox": {
-      "fixedValue": false
-    },
+    "mobModelTexture": "texture.png",
+    "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelLayers": [
-      {
-        "model": "Default",
-        "texture": "zoio_olhos.png",
-        "glow": true
-      }
-    ],
+    "entityDataEntries": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
+    "stepHeight": 0.5,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -16777114,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -205,
+      "value": -256,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -46,9 +32,9 @@
     },
     "isBoss": true,
     "bossBarColor": "BLUE",
-    "bossBarType": "PROGRESS",
+    "bossBarType": "NOTCHED_6",
     "equipmentMainHand": {
-      "value": "CUSTOM:Marreta"
+      "value": ""
     },
     "equipmentOffHand": {
       "value": ""
@@ -70,34 +56,29 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
-    "stepHeight": 0.6,
+    "movementSpeed": 0.19999999999999998,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 50,
+    "health": 30,
     "xpAmount": 0,
     "waterMob": false,
-    "breatheUnderwater": {
-      "fixedValue": false
-    },
-    "pushedByFluids": {
-      "fixedValue": true
-    },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "deathTime": 20,
+    "lerp": 0,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
-    "immuneToLightning": true,
+    "immuneToLightning": false,
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
@@ -106,26 +87,49 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:Marreta"
-    },
-    "livingSound": {
-      "value": "CUSTOM:risada"
-    },
-    "hurtSound": {
       "value": ""
     },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": "entity.generic.hurt"
+    },
     "deathSound": {
-      "value": "CUSTOM:naovouaguentar"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
     },
-    "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "zoioboss.geo.json",
+    "groupName": "",
+    "animation1": "idle",
+    "animation2": "walk",
+    "animation3": "",
+    "animation4": "marreta1",
+    "animation5": "",
+    "animation6": "",
+    "animation7": "",
+    "animation8": "",
+    "animation9": "",
+    "animation10": "",
+    "enable2": true,
+    "enable3": false,
+    "enable4": true,
+    "enable5": false,
+    "enable6": false,
+    "enable7": false,
+    "enable8": false,
+    "enable9": false,
+    "enable10": false,
     "breedable": false,
     "tameable": false,
+    "disableDeathRotation": false,
+    "headMovement": false,
+    "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {
@@ -134,6 +138,7 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
+    "height": 1.0,
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,
     "spawningProbability": 20,

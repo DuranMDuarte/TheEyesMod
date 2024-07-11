@@ -2,7 +2,6 @@
 package net.mcreator.trolladafinal.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
@@ -72,7 +71,13 @@ public class FidgetspinnerBlock extends BaseEntityBlock implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
+
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 0, 0, 16, 2, 16);
+			case NORTH -> box(0, 0, 0, 16, 2, 16);
+			case EAST -> box(0, 0, 0, 16, 2, 16);
+			case WEST -> box(0, 0, 0, 16, 2, 16);
+		};
 	}
 
 	@Override

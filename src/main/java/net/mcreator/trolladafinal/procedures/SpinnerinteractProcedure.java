@@ -55,7 +55,7 @@ public class SpinnerinteractProcedure {
 					}
 				}
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = TrolladafinalModEntities.ZOIO_BOSS.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = TrolladafinalModEntities.ZOIOBOSS.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setDeltaMovement(0, 0, 0);
 					}
