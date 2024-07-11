@@ -15,12 +15,12 @@
     "creativeTab": {
       "value": "CUSTOM:EyesTab"
     },
-    "harvestLevel": 1,
+    "harvestLevel": 3,
     "efficiency": 6.0,
     "attackSpeed": 0.8,
     "enchantability": 2,
     "damageVsEntity": 10.0,
-    "usageCount": 1250,
+    "usageCount": 1781,
     "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false

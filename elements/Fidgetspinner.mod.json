@@ -13,7 +13,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "spinnertexture",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -23,12 +23,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 5.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
+        "mz": 5.0,
+        "Mx": 8.0,
         "My": 2.0,
-        "Mz": 16.0,
+        "Mz": 5.0,
         "subtract": false
       }
     ],
@@ -101,13 +101,13 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 1,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryDropWhenDestroyed": false,
+    "inventoryComparatorPower": false,
     "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
@@ -121,6 +121,9 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "Spinnerinteract"
+    },
+    "onBlockAdded": {
+      "name": "FidgetspinnerBlockAdded"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [

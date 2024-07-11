@@ -372,16 +372,55 @@
         ]
       },
       "path": "~/Other"
-    }
-  ],
-  "variable_elements": [
+    },
     {
-      "name": "JUMPSCARE",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
+      "name": "MarretaRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marreta_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trolladafinal/recipes/sledgehammer_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FidgetspinnerBlockAdded",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fidgetspinner_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trolladafinal/procedures/FidgetspinnerBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Zoio"
     }
   ],
+  "variable_elements": [],
   "sound_elements": [
     {
       "name": "voupegar",
@@ -437,8 +476,8 @@
       "subtitles.alekingles": "",
       "item.trolladafinal.alek_animated_spawn_egg": "Alek Spawn Egg",
       "advancements.marreta_advance.title": "EU VOU PEGAR MINHA MARRETA!",
-      "subtitles.suacara": "",
       "entity.trollada_final.zoio": "Zoio",
+      "subtitles.suacara": "",
       "item.trolladafinal.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
       "advancements.marreta_advance.descr": "Consiga a marreta",
       "item_group.trollada_final.eyes_tab": "The Eyes",
@@ -467,8 +506,8 @@
       "subtitles.alekingles": "",
       "item.trolladafinal.alek_animated_spawn_egg": "Alek Spawn Egg",
       "advancements.marreta_advance.title": "EU VOU PEGAR MINHA MARRETA!",
-      "subtitles.suacara": "Vou dar tanta marretada na sua cara",
       "entity.trollada_final.zoio": "Zoio",
+      "subtitles.suacara": "Vou dar tanta marretada na sua cara",
       "item.trolladafinal.zoio_boss_spawn_egg": "Zoio Boss Spawn Egg",
       "advancements.marreta_advance.descr": "Consiga a marreta",
       "item_group.trollada_final.eyes_tab": "The Eyes",

@@ -2,6 +2,7 @@
 package net.mcreator.trolladafinal.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
@@ -24,12 +25,14 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.trolladafinal.procedures.SpinnerinteractProcedure;
+import net.mcreator.trolladafinal.procedures.FidgetspinnerBlockAddedProcedure;
 import net.mcreator.trolladafinal.init.TrolladafinalModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -69,13 +72,7 @@ public class FidgetspinnerBlock extends BaseEntityBlock implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-
-		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 2, 16);
-			case NORTH -> box(0, 0, 0, 16, 2, 16);
-			case EAST -> box(0, 0, 0, 16, 2, 16);
-			case WEST -> box(0, 0, 0, 16, 2, 16);
-		};
+		return Shapes.empty();
 	}
 
 	@Override
@@ -105,6 +102,12 @@ public class FidgetspinnerBlock extends BaseEntityBlock implements EntityBlock {
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		FidgetspinnerBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		int x = pos.getX();
@@ -117,5 +120,18 @@ public class FidgetspinnerBlock extends BaseEntityBlock implements EntityBlock {
 
 		SpinnerinteractProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
+	}
+
+	@Override
+	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
+		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
+		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
+	}
+
+	@Override
+	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
+		super.triggerEvent(state, world, pos, eventID, eventParam);
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
 	}
 }

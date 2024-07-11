@@ -12,7 +12,7 @@ public class MarretaItem extends PickaxeItem {
 	public MarretaItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1250;
+				return 1781;
 			}
 
 			public float getSpeed() {
@@ -24,7 +24,7 @@ public class MarretaItem extends PickaxeItem {
 			}
 
 			public int getLevel() {
-				return 1;
+				return 3;
 			}
 
 			public int getEnchantmentValue() {
