@@ -27,13 +27,13 @@
     "portalParticles": {
       "value": "PORTAL"
     },
-    "portalLuminance": 0,
+    "portalLuminance": 1,
     "portalSound": {
       "value": "block.portal.ambient"
     },
     "enableIgniter": true,
-    "igniterName": "Fumaca Portal Igniter",
-    "igniterRarity": "COMMON",
+    "igniterName": "Cigarro do Alek",
+    "igniterRarity": "EPIC",
     "specialInformation": {
       "fixedValue": []
     },

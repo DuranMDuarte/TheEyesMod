@@ -14,7 +14,7 @@ import net.mcreator.trolladafinal.block.FumacaPortalBlock;
 
 public class FumacaItem extends Item {
 	public FumacaItem() {
-		super(new Item.Properties().rarity(Rarity.COMMON).durability(64));
+		super(new Item.Properties().rarity(Rarity.EPIC).durability(64));
 	}
 
 	@Override

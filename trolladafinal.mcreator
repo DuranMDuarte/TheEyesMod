@@ -233,21 +233,6 @@
       "path": "~/Zoio"
     },
     {
-      "name": "AlekOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alek_on_entity_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/trolladafinal/procedures/AlekOnEntityTickUpdateProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Alek"
-    },
-    {
       "name": "Fumacaprojetil",
       "type": "projectile",
       "sortid": 23,
@@ -357,20 +342,6 @@
       "path": "~/Other"
     },
     {
-      "name": "MarretaRecipe",
-      "type": "recipe",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "marreta_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/trolladafinal/recipes/sledgehammer_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "FidgetspinnerBlockAdded",
       "type": "procedure",
       "sortid": 29,
@@ -418,6 +389,20 @@
         ]
       },
       "path": "~/Zoio"
+    },
+    {
+      "name": "SpinnerRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spinner_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trolladafinal/recipes/spinner_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -497,7 +482,7 @@
       "item.trolladafinal.marreta": "Sledgehammer",
       "subtitles.naovouaguentar": "",
       "block.trolladafinal.fidgetspinner": "Fidgetspinner",
-      "item.trolladafinal.fumaca": "Fumaca Portal Igniter",
+      "item.trolladafinal.fumaca": "Cigarro do Alek",
       "entity.trolladafinal.zoioboss": "Zoio",
       "block.trollada_final.spinner": "Spinner"
     },
